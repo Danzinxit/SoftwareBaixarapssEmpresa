@@ -33,7 +33,7 @@ Primeiro, clone este repositório em seu diretório local:
 
 bash
 Copiar
-git clone https://github.com/empresa/software-de-download.git
+git clone https://github.com/Danzinxit/SoftwareBaixarapssEmpresa.git
 cd software-de-download
 2. Instalar dependências
 Instale as dependências do projeto usando o pip:
