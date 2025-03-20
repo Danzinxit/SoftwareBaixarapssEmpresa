@@ -17,6 +17,8 @@ apps = {
     "Java": "https://sdlc-esd.oracle.com/ESD6/JSCDL/jdk/8u441-b07/7ed26d28139143f38c58992680c214a5/jre-8u441-windows-x64.exe?GroupName=JSC&FilePath=/ESD6/JSCDL/jdk/8u441-b07/7ed26d28139143f38c58992680c214a5/jre-8u441-windows-x64.exe&BHost=javadl.sun.com&File=jre-8u441-windows-x64.exe&AuthParam=1742488489_f9da2d56a4dddfc3c54cbafd611f3741&ext=.exe"
 }
 
+#AQUI ESTA TODO O RACIOCINIO DE CODIGO QUE FIZ 
+
 def download_file(url, app_name):
     try:
         filename = url.split("/")[-1]
@@ -58,10 +60,10 @@ def toggle_all_apps():
 # Criar a janela principal
 root = tk.Tk()
 root.title("Baixador de Aplicativos")
-root.geometry("500x650")  # Aumentando a janela
+root.geometry("500x650")
 root.config(bg="#f0f0f0")
 
-# Carregar a imagem
+# Carregar a imagem (NAO FUNCIONAL)
 try:
     img = Image.open("logo_epamig_2024-1024x277.png")
     img = img.resize((150, 150), Image.ANTIALIAS)
@@ -74,7 +76,7 @@ try:
 except Exception as e:
     print(f"Erro ao carregar a imagem: {str(e)}")
 
-# Criar um frame para conter os checkbuttons
+# Criar UM CHECKBOX
 frame = tk.Frame(root, bg="#f0f0f0")
 frame.pack(pady=20)
 
